@@ -57,3 +57,17 @@ h1{
     background-color: #3e7ec2;
     transition: 0.3s ease;
 }
+
+.completada {
+    color: white;
+    background-color: #ade7bb; 
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pendiente {
+    color: black;
+    background-color: #fea8a8;
+    padding: 5px;
+    border-radius: 5px;
+}
