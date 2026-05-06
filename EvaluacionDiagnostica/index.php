@@ -1,5 +1,8 @@
+<?php
+    require_once 'conn.php';
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +10,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>TO-DO LIST</h1>
-    
+    <main class="main-container">
+        <h1>TO-DO LIST</h1>
+        <form class="task-navbar">
+            <input type="text" name="taskToDo" placeholder="Escriba su tarea aquí...">
+            <button type="submit">Agregar Tarea</button>
+        </form>
+        <section class="taskList">
+            <h3>Tareas</h3>
+            <ul>
+                <!-- Las tareas se mostrarán aquí -->
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
