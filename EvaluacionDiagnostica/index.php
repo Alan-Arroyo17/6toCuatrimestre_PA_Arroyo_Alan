@@ -41,7 +41,7 @@
 <body>
     <div class="main-container">
         <h1>TO-DO LIST</h1>
-        <section class="task-navbar">
+        <section class="task-input">
             <form method="POST" action="">
                 <input type="text" name="taskToDo" placeholder="Escriba su tarea aquí...">
                 <button type="submit">Agregar Tarea</button>
