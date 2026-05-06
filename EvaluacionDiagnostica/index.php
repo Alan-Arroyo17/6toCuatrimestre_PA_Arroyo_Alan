@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="main-container">
+    <div class="main-container">
         <h1>TO-DO LIST</h1>
-        <form class="task-navbar">
+        <section class="task-navbar">
             <input type="text" name="taskToDo" placeholder="Escriba su tarea aquí...">
             <button type="submit">Agregar Tarea</button>
-        </form>
+        </section>
         <section class="taskList">
             <h3>Tareas</h3>
             <ul>
                 <!-- Las tareas se mostrarán aquí -->
             </ul>
         </section>
-    </main>
+    </div>
 </body>
 </html>
