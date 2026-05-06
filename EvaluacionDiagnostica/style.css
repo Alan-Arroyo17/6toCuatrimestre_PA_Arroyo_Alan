@@ -22,7 +22,7 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-.task-navbar{
+.task-input{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,20 +31,20 @@ h1{
     gap: 20px;
 }
 
-.task-navbar input{
+.task-input input{
     padding: 10px;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.task-navbar input:focus{
+.task-input input:focus{
     outline: none;
     border-color: #000;
     transition: 0.3s ease;
 }
 
-.task-navbar button{
+.task-input button{
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
@@ -53,7 +53,7 @@ h1{
     cursor: pointer;
 }
 
-.task-navbar button:hover{
+.task-input button:hover{
     background-color: #3e7ec2;
     transition: 0.3s ease;
 }
