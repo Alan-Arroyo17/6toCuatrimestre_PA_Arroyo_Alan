@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Videojuegos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">🎮 Gestor de Videojuegos</div>
+            <ul>
+                <li><a href="index.html">Videojuegos</a></li>   
+                <li><a href="generos.html">Géneros</a></li>
+                <li><a href="plataformas.html">Plataformas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Videojuegos</h2>
+
+            <div class="filters">
+                <input type="text" id="search-input" placeholder="Buscar">
+
+                <select id="genero-select">
+                    <option value="">Todos los géneros</option>
+                </select>
+
+                <select id="plataforma-select">
+                    <option value="">Todas las plataformas</option>
+                </select>
+
+                <a class="btn" href="crear.html">Nuevo</a>
+            </div>
+            <div class="table-container" id="tabla-videojuegos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Titulo</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Lanzamiento</th>
+                            <th>Calificacion</th>
+                            <th>Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

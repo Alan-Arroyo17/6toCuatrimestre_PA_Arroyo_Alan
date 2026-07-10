@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Videojuego</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <div class="logo">🎮 Gestor de Videojuegos</div>
+
+        <ul>
+            <li><a href="index.html">Videojuegos</a></li>
+            <li><a href="generos.html">Géneros</a></li>
+            <li><a href="plataformas.html">Plataformas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div class="card">
+
+        <h2>Editar Videojuego</h2>
+
+        <form id="formEditar">
+
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input
+                    type="text"
+                    id="titulo"
+                    name="titulo"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    rows="5"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio</label>
+
+                <input
+                    type="number"
+                    id="precio"
+                    name="precio"
+                    step="0.01"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="lanzamiento">Fecha de lanzamiento</label>
+
+                <input
+                    type="date"
+                    id="lanzamiento"
+                    name="lanzamiento"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="calificacion">Calificación</label>
+
+                <input
+                    type="number"
+                    id="calificacion"
+                    name="calificacion"
+                    step="0.1"
+                    min="0"
+                    max="10"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="genero-select">Género</label>
+
+                <select
+                    id="genero-select"
+                    required
+                >
+                    <option value="">Seleccione un género</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="plataforma-select">Plataforma</label>
+
+                <select
+                    id="plataforma-select"
+                    required
+                >
+                    <option value="">Seleccione una plataforma</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Imagen actual</label>
+                <img id="preview-imagen" width="150">
+            </div>
+
+            <div class="form-group">
+                <label for="imagen">Nueva imagen</label>
+                <input
+                    type="file"
+                    id="imagen"
+                    name="imagen"
+                    accept="image/*"
+                >
+            </div>
+
+            <div class="botones">
+                <button type="submit" class="btn btn-primary">
+                    Guardar cambios
+                </button>
+
+                <a href="index.html" class="btn btn-secondary">
+                    Cancelar
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

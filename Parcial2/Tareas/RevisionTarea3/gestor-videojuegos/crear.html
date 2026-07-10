@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Videojuego</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">🎮 Gestor de Videojuegos</div>
+
+            <ul>
+                <li><a href="index.html">Videojuegos</a></li>
+                <li><a href="generos.html">Géneros</a></li>
+                <li><a href="plataformas.html">Plataformas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Crear Videojuego</h2>
+
+            <form class="form" id="crear-videojuego">
+
+                <input
+                    type="text"
+                    id="titulo"
+                    name="titulo"
+                    placeholder="Título"
+                    required
+                >
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    placeholder="Descripción"
+                    required
+                ></textarea>
+
+                <input
+                    type="number"
+                    id="precio"
+                    name="precio"
+                    placeholder="Precio"
+                    step="0.01"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="lanzamiento"
+                    name="fecha_lanzamiento"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="calificacion"
+                    name="calificacion"
+                    placeholder="Calificación"
+                    min="0"
+                    max="10"
+                    step="0.1"
+                    required
+                >
+
+                <input
+                    type="file"
+                    id="imagen"
+                    name="imagen"
+                    accept="image/*"
+                >
+
+                <select id="genero-select" required>
+                    <option value="">Selecciona un género</option>
+                </select>
+
+                <select id="plataforma-select" required>
+                    <option value="">Selecciona una plataforma</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Crear videojuego
+                </button>
+
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
